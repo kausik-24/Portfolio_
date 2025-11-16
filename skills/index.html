@@ -34,32 +34,43 @@
 </head>
 <body class="gradient-bg">
   <nav class="fixed top-0 w-full z-50 backdrop-blur-lg bg-black/90 border-b border-gray-800">
+    <input type="checkbox" id="menu-toggle" class="hidden">
+    
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-center justify-between h-16">
         <a href="/" class="font-bold text-xl text-white hover:text-violet-500 transition-colors">Kausik Challapalli</a>
+        
         <div class="hidden md:flex items-center space-x-6">
           <a href="/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Home</a>
           <a href="/about/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">About</a>
-          <a href="/skills/" class="nav-link active px-3 py-2 rounded-lg text-sm">Skills</a>
+          <a href="/skills/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Skills</a>
           <a href="/projects/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Projects</a>
           <a href="/publications/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Publications</a>
           <a href="/blogs/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Blogs</a>
           <a href="/freelance/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Freelance</a>
           <a href="/contact/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Contact</a>
-              </div>
+        </div>
+        
+        <label for="menu-toggle" class="md:hidden cursor-pointer z-50">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
     </div>
     
-    <!-- Mobile Menu -->
-    <div class="mobile-menu md:hidden bg-black border-t border-gray-800">
+    <div class="mobile-sidebar">
       <div class="px-6 py-4 space-y-3">
-        <a href="/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Home</a>
-        <a href="/about/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">About</a>
-        <a href="/skills/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Skills</a>
-        <a href="/projects/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Projects</a>
-        <a href="/publications/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Publications</a>
-        <a href="/blogs/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Blogs</a>
-        <a href="/freelance/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Freelance</a>
-        <a href="/contact/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Contact</a>
+        <a href="/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Home</a>
+        <a href="/about/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">About</a>
+        <a href="/skills/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Skills</a>
+        <a href="/projects/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Projects</a>
+        <a href="/publications/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Publications</a>
+        <a href="/blogs/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Blogs</a>
+        <a href="/freelance/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Freelance</a>
+        <a href="/contact/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Contact</a>
       </div>
     </div>
   </nav>

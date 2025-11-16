@@ -54,40 +54,61 @@
 </head>
 <body class="gradient-bg">
   <!-- Navigation -->
+  <input type="checkbox" id="menu-toggle" class="hidden">
   <nav class="fixed top-0 w-full z-50 backdrop-blur-lg bg-black/90 border-b border-gray-800">
+    
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-center justify-between h-16">
-        <a href="/" class="font-bold text-xl text-white hover:text-violet-500 transition-colors">
-          Kausik Challapalli
-        </a>
+        <a href="/" class="font-bold text-xl text-white hover:text-violet-500 transition-colors">Kausik Challapalli</a>
+        
         <div class="hidden md:flex items-center space-x-6">
-          <a href="/" class="nav-link active px-3 py-2 rounded-lg text-sm">Home</a>
-          <a href="about/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">About</a>
-          <a href="skills/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Skills</a>
-          <a href="projects/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Projects</a>
-          <a href="publications/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Publications</a>
-          <a href="blogs/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Blogs</a>
-          <a href="freelance/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Freelance</a>
-          <a href="contact/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Contact</a>
-              </div>
+          <a href="/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Home</a>
+          <a href="/about/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">About</a>
+          <a href="/skills/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Skills</a>
+          <a href="/projects/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Projects</a>
+          <a href="/publications/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Publications</a>
+          <a href="/blogs/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Blogs</a>
+          <a href="/freelance/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Freelance</a>
+          <a href="/contact/" class="nav-link px-3 py-2 rounded-lg text-sm text-gray-300">Contact</a>
+        </div>
+        
+        <label for="menu-toggle" class="md:hidden cursor-pointer z-50">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
     </div>
     
-    <!-- Mobile Menu -->
-    <div class="mobile-menu md:hidden bg-black border-t border-gray-800">
+    <div class="mobile-sidebar">
       <div class="px-6 py-4 space-y-3">
-        <a href="/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Home</a>
-        <a href="/about/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">About</a>
-        <a href="/skills/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Skills</a>
-        <a href="/projects/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Projects</a>
-        <a href="/publications/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Publications</a>
-        <a href="/blogs/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Blogs</a>
-        <a href="/freelance/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Freelance</a>
-        <a href="/contact/" class="block w-full text-left px-3 py-2 rounded-lg transition-all duration-200 hover:text-violet-700 hover:bg-violet-700/10 text-gray-300">Contact</a>
+        <a href="/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Home</a>
+        <a href="/about/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">About</a>
+        <a href="/skills/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Skills</a>
+        <a href="/projects/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Projects</a>
+        <a href="/publications/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Publications</a>
+        <a href="/blogs/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Blogs</a>
+        <a href="/freelance/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Freelance</a>
+        <a href="/contact/" class="block w-full text-left px-4 py-3 rounded-lg text-white hover:bg-violet-700/10 hover:text-violet-500 transition-all">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="px-6 py-4 space-y-2">
+      <a href="/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Home</a>
+      <a href="/about/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">About</a>
+      <a href="/skills/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Skills</a>
+      <a href="/projects/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Projects</a>
+      <a href="/publications/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Publications</a>
+      <a href="/blogs/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Blogs</a>
+      <a href="/freelance/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Freelance</a>
+      <a href="/contact/" class="block w-full text-left px-4 py-3 rounded-lg transition-all hover:text-violet-500 hover:bg-violet-700/10 text-white text-lg">Contact</a>
+    </div>
+  </div><!-- Hero Section -->
   <section class="min-h-screen flex items-center pt-16 relative">
     <div class="absolute -top-40 -left-40 w-[32rem] h-[32rem] rounded-full blur-3xl" style="background: radial-gradient(closest-side, rgba(109,40,217,0.35), transparent);"></div>
     <div class="absolute -bottom-40 -right-40 w-[36rem] h-[36rem] rounded-full blur-3xl" style="background: radial-gradient(closest-side, rgba(109,40,217,0.30), transparent);"></div>
